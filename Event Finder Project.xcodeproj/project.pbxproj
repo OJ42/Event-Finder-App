@@ -16,6 +16,7 @@
 		E61D9D2F276C86C900155508 /* Event_Finder_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D9D2E276C86C900155508 /* Event_Finder_ProjectTests.swift */; };
 		E61D9D39276C86C900155508 /* Event_Finder_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D9D38276C86C900155508 /* Event_Finder_ProjectUITests.swift */; };
 		E61D9D3B276C86C900155508 /* Event_Finder_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61D9D3A276C86C900155508 /* Event_Finder_ProjectUITestsLaunchTests.swift */; };
+		E61D9D4A276C86EB00155508 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61D9D49276C86EB00155508 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		E61D9D34276C86C900155508 /* Event Finder ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event Finder ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61D9D38276C86C900155508 /* Event_Finder_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Finder_ProjectUITests.swift; sourceTree = "<group>"; };
 		E61D9D3A276C86C900155508 /* Event_Finder_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Finder_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E61D9D47276C86E700155508 /* Event Finder Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Event Finder Project.entitlements"; sourceTree = "<group>"; };
+		E61D9D49276C86EB00155508 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61D9D4A276C86EB00155508 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				E61D9D2D276C86C900155508 /* Event Finder ProjectTests */,
 				E61D9D37276C86C900155508 /* Event Finder ProjectUITests */,
 				E61D9D15276C86C800155508 /* Products */,
+				E61D9D48276C86EB00155508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +104,7 @@
 		E61D9D16276C86C800155508 /* Event Finder Project */ = {
 			isa = PBXGroup;
 			children = (
+				E61D9D47276C86E700155508 /* Event Finder Project.entitlements */,
 				E61D9D17276C86C800155508 /* AppDelegate.swift */,
 				E61D9D19276C86C800155508 /* SceneDelegate.swift */,
 				E61D9D1B276C86C800155508 /* ViewController.swift */,
@@ -125,6 +131,14 @@
 				E61D9D3A276C86C900155508 /* Event_Finder_ProjectUITestsLaunchTests.swift */,
 			);
 			path = "Event Finder ProjectUITests";
+			sourceTree = "<group>";
+		};
+		E61D9D48276C86EB00155508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E61D9D49276C86EB00155508 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Event Finder Project/Event Finder Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C6334A3ABG;
@@ -465,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Event Finder Project/Event Finder Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C6334A3ABG;
